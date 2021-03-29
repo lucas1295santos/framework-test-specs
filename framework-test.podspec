@@ -4,15 +4,11 @@ Pod::Spec.new do |s|
     s.summary      = "A brief description of MyFramework project."
     s.description  = "An extended description of MyFramework project."
     s.homepage     = "https://github.com/lucas1295santos/framework-test"
-    s.license = { :type => 'Copyright', :text => <<-LICENSE
-                   Copyright 2018
-                   Permission is granted to...
-                  LICENSE
-                }
+    s.license = "MIT"
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
     s.source       = { :git => "https://github.com/lucas1295santos/framework-test.git",
      :branch => "master",
       :tag => "#{s.version.to_s}" }
-    s.vendored_frameworks = "kmmsharedmodule.framework"
+    s.dource_files = "kmmsharedmodule.framework"
     s.platform = :ios
 end
