@@ -10,6 +10,9 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :git => "https://github.com/lucas1295santos/framework-test.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/lucas1295santos/framework-test.git",
+     :branch => "master",
+      :tag => "#{s.version.to_s}" }
     s.vendored_frameworks = "kmmsharedmodule.framework"
+    s.platform = :ios
 end
